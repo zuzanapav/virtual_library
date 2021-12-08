@@ -1,0 +1,61 @@
+
+.b_body  {
+  background-image: url("back.jpeg");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.c_column {
+  float: left;
+  width: 14%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .c_column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.c_card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.c_container {
+  padding: 0 16px;
+}
+
+.c_container::after, .c_row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+}
+
+.button:hover {
+  background-color: #555;
+}

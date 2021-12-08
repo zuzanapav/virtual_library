@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Style/style_uvod.css">
+</head>
+<body>
+
+<div class="hero-image" id="particles-js">
+  <div class="hero-text">
+    <h1 style="font-size:50px">Virtuálna knižnica</h1>
+    <p class="p1">by Elite</p>
+    <button class="button"  onclick="openNav()" ><b>Poď študovať informatiku</b></button>
+
+  </div>
+</div>
+
+<script src="./particles.min.js"></script>
+<script>
+particlesJS.load('particles-js', 'particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+</script>
+
+
+<div id="myNav" class="overlay" >
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="index2.html">Počítačová grafika</a>
+    <a href="#">Operačné systémy</a>
+    <a href="#">Počítačová analýza dát</a>
+    <a href="#">Databázové systémy</a>
+    <a href="#">Multimédiá</a>
+  </div>
+</div>
+
+
+
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
+</body>
+</html>
